@@ -43,21 +43,27 @@ function playRound(playerSelection, computerSelection) {
     } 
 
     if (playerSelection == 'Rock' && computerSelection == 'Paper') {
+            computerScore++
             return  'You Lose! Paper beats Rock';
     }
     if (playerSelection == 'Paper' && computerSelection == 'Scissors') {
+            computerScore++
             return 'You Lose! Scissors beats Paper';
     }
     if (playerSelection == 'Scissors' && computerSelection == 'Rock'){
+            computerScore++
             return 'You Lose! Rock beats Scissors';
     }
     if (playerSelection == 'Rock' && computerSelection == 'Scissors'){
+            playerScore++
             return 'You Win! Rock beats Scissors';
     }
     if (playerSelection == 'Paper' && computerSelection == 'Rock'){
+            playerScore++
             return 'You Win! Paper beats Rock';
     }
     if (playerSelection == 'Scissors' && computerSelection == 'Paper'){
+            playerScore++
             return 'You Win! Scissors beats Paper';
     }
 }
@@ -73,10 +79,19 @@ function game (){
         playRound(playerSelection, computerSelection);
         console.log(playRound(playerSelection, computerSelection))
     }
+
+    if (playerScore > computerScore) {
+        return 'You beat the computer! Impressive.'
+    } else if (playerScore < computerScore) {
+        return 'You were beat by the computer! Yikes.'
+    } else {
+        return 'You tied with the computer. cool'
+    }
 }
 
-game();
 
+console.log(game());
+ 
 //console.log(game()); 
 
 
