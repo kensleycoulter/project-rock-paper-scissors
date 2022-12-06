@@ -2,24 +2,123 @@ html {
     background-color: #ffdac7;
 }
 
-#title {
+body {
+    text-align: center;
+    align-content: center;
+}
+
+.header {
     text-align: center;
 }
 
-
-
-button {
+#title {
     color: #eb6424;
-    background-color: #babd8e;
+    font-family: didot, serif;
+    font-size: 72px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sub-title{
+    color: #7c690a;
+    font-family: didot, serif;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+#rock {
+    background-image: url(imgs/rock.png);
+    background-size: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 350px;
+    height: 250px;
+}
+
+#paper {
+    background-image: url(imgs/paper.png);
+    background-size: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 350px;
+    height: 250px;
+}
+
+#scissors {
+    background-image: url(imgs/scissors.png);
+    background-size: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 350px;
+    height: 250px;
 }
 
 
 #score-display {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    font-size: 60px;
+    margin: 30px;
+}
+
+#round-winner {
+    color: #eb6424;
+    align-content: center;
+    font-family: didot, serif;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+}
+
+.sub-text {
+    font-family: didot, serif;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#bottom-half {
+    align-content: center;
 }
 
 
+#result-display {
+    color: #7c690a;
+    font-family: didot, serif;
+    font-size: 24px;
+    margin: 20px;
+}
 
+#restart {
+    display: flex;
+    justify-content: center;
+}
 
-
-
+#play-again {
+    color: #7c690a;
+    background-color: #babd8e;
+    border-color: #7c690a;
+    font-size: 18px;
+    font-weight: 450;
+    width: 130px;
+    height: 27px;
+}

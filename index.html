@@ -11,31 +11,63 @@
 
     <div class="header">
 
-        <h3 id="title">Rock Paper Scissors</h3>
+        <h1 id="title">rock paper scissors</h1>
+        <div class="sub-title">first to 5 wins</div>
+
+    </div>
+
+    <div id="score-board">
+
+        <div id="score-display">  
+            <div><span id="player-score"></span></div>
+            <div id="hyphen">-</div>
+            <div> <span id="computer-score"></span></div>
+        </div>
+
+        <h2> <span id="round-winner"></span></h2>
+
 
     </div>
 
     <div id="container">
-        <button id="rock">ROCK</button>
-        <button id="paper">PAPER</button>
-        <button id="scissors">SCISSORS</button>
+
+        <div class="options"> 
+            <button id="rock"></button>
+            <div class="sub-text">rock</div>
+        </div>
+
+        <div class="options">
+            <button id="paper"></button>
+            <div class="sub-text">paper</div>
+        </div>
+        
+        <div class="options">
+            <button id="scissors"></button>
+            <div class="sub-text">scissors</div>
+        </div>
+
     </div>
 
-    <div id="score-board">
-        <h2>computer choice: <span id="comp-choice"></span></h2>
-        <h2>player choice: <span id="player-choice"></span></h2>
-        <h2>round winner: <span id="round-winner"></span></h2>
-        <h2 id="score-display">scoreboard  
-            <h2>player score: <span id="player-score"></span></h2>
-            <h2>computer score: <span id="computer-score"></span></h2>
-        </h2>
-        <h2>final result: <span id="result-display"></span></h2>
 
+
+ <div id="bottom-half">
+
+  <!-- <div id="choices">
+        <h2><span id="comp-choice"></span></h2>
+        <h2><span id="player-choice"></span></h2>
+    </div> 
+-->
+    <div id="final-result"> 
+
+        <h2> <span id="result-display"></span></h2>
+       <!-- <h3 class="final-message">click the button below to play again!</h3> -->
     </div>
 
     <div id="restart">
         <button id="play-again">PLAY AGAIN</button>
     </div>
+
+</div>
 
     
 
