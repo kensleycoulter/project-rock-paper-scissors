@@ -89,6 +89,18 @@ body {
     gap: 50px; 
 }
 
+#rock,
+#paper,
+#scissors {
+    transition: transform 250ms;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+    transform: translateY(-10px);
+}
+
 .sub-text {
     font-family: didot, serif;
     font-size: 18px;
